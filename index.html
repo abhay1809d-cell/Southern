@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Street Cafe - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="./coffee.css">
+<script src="./coffee.js"></script>
+</head>
+<body>
+    <!-- Modern Header -->
+    <header class="fc-header">
+    <nav class="fc-nav">
+        <ul class="nav-left">
+<li><a href="#gallery">HOME</a></li> 
+            <li><a href="#about">ABOUT US</a></li>
+                 <li><a href="#blog">BLOGS</a></li>   
+        </ul>
+
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+
+        <ul class="nav-right">
+            
+            <li><a href="#franchise">FRANCHISE</a></li>
+            <li><a href="#career">CAREER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section with Both Side Controls -->
+   <section class="hero-section" id="home">
+    <video class="hero-video" autoplay muted loop playsinline poster="path/to/fallback.jpg">
+        <source src="video/hero.mp4" type="video/mp4">
+        <source src="video/hero.mp4" type="video/webm">
+    </video>
+
+    <!-- ✅ Overlay Added -->
+    <div class="hero-overlay">
+
+        <!-- ✅ Your Content Here -->
+        <div class="hero-content">
+            <h1 class="brand-title">SOUTH STREET CAFE</h1>
+
+            <p class="tagline">
+                Where every cup tells a story. Experience the finest coffee in town
+            </p>
+
+            <a href="#menu" class="menu-btn">EXPLORE MENU</a>
+        </div>
+
+    </div>
+</section>
+<!-- IMAGE SLIDER SECTION -->
+<section id="gallery" class="image-slider">
+    <div class="slider-container">
+        <div class="slide fade">
+
+            <img src="images/photo2.jpg" alt="Image 1">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/photo3.jpg" alt="Image 2">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/photo5.jpg" alt="Image 3">
+        </div>
+
+        <div class="slide fade">
+            <img src="images/snacks.jpeg" alt="Image 4">
+
+        </div>
+
+        <!-- Next/Prev Buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+</section>
+
+
+
+
+    <!-- Coffee Menu Section -->
+    <section class="coffee-menu" id="menu">
+        <h2 class="section-title">Our  Menu</h2>
+        
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All Coffees</button>
+            <button class="category-btn" data-category="snacks">Snacks</button>
+           
+
+        </div>
+
+        <div class="menu-grid">
+            <!-- Espresso Based Coffees -->
+            <div class="menu-item" data-category="espresso">
+                <img src="Espresso.jpg" alt="Espresso">
+                <div class="item-info">
+                    <h3>Classic Espresso</h3>
+                    <p>Strong and concentrated coffee shot</p>
+                    <div class="item-price">₹120</div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="espresso">
+                <img src="images/Americano.jpg" alt="Americano">
+                <div class="item-info">
+                    <h3>Americano</h3>
+                    <p>Espresso with hot water, smooth and rich</p>
+                    <div class="item-price">₹150</div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="espresso">
+                <img src="images/cappuccino.jpg" alt="Cappuccino">
+                <div class="item-info">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and foam</p>
+                    <div class="item-price">₹180</div>
+                </div>
+            </div>
+
+            
+
+            
+
+        
+
+            <!-- Filter Coffee -->
+            <div class="menu-item" data-category="filter">
+                <img src="images/pour.jpg" alt="Pour Over">
+                <div class="item-info">
+                    <h3>Pour Over</h3>
+                    <p>Handcrafted filter coffee with precision</p>
+                    <div class="item-price">₹200</div>
+                </div>
+            </div>
+
+            
+
+            
+
+            <!-- Specialty Coffee -->
+            <div class="menu-item" data-category="special">
+                <img src="images/turkish.jpeg" alt="Turkish Coffee">
+                <div class="item-info">
+                    <h3>Turkish Coffee</h3>
+                    <p>Traditional finely ground coffee</p>
+                    <div class="item-price">₹170</div>
+                </div>
+            </div>
+
+           
+           
+
+            <!-- Cold Brew -->
+            <div class="menu-item" data-category="cold">
+                <img src="images/cold.jpg" alt="Cold Brew">
+                <div class="item-info">
+                    <h3>Classic Cold Brew</h3>
+                    <p>Slow-steeped cold coffee, smooth and refreshing</p>
+                    <div class="item-price">₹190</div>
+                </div>
+            </div>
+
+            
+
+           
+
+            
+    </section>
+    <!-- ✅ Snacks Items -->
+<div class="menu-item" data-category="snacks">
+    <img src="images/photo4.jpg" alt="Veg Sandwich">
+    <div class="item-info">
+        <h3>Veg Sandwich</h3>
+        <p>Freshly toasted sandwich with veggies</p>
+        <div class="item-price">₹120</div>
+    </div>
+</div>
+
+<div class="menu-item" data-category="snacks">
+    <img src="images/pasta.jpg" alt="Pasta">
+    <div class="item-info">
+        <h3>White Sauce Pasta</h3>
+        <p>Creamy Italian style pasta</p>
+        <div class="item-price">₹180</div>
+    </div>
+</div>
+
+<div class="menu-item" data-category="snacks">
+    <img src="images/photo1.jpeg" alt="Burger">
+    <div class="item-info">
+        <h3>Classic Veg Burger</h3>
+        <p>Soft bun with crispy patty</p>
+        <div class="item-price">₹150</div>
+    </div>
+</div>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About South Street Cafe</h2>
+                <p>Founded in 2025, South Street Cafe has been serving the finest coffee to our community with passion and dedication. We believe that every cup of coffee should be an experience worth remembering.</p>
+                <p>Our beans are sourced from the best plantations around the world, carefully roasted to perfection, and brewed with precision by our skilled baristas.</p>
+                <p>We're not just a coffee shop - we're a community hub where people connect, ideas flourish, and memories are made over great coffee.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24" alt="About South Street Cafe">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section - Like Screenshot -->
+    <section class="contact-us" id="contact">
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2>Contact Us</h2>
+                <p class="subtitle">Send Us a Message</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2>Contact Us</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>ABC Tower,Noida sector 135,Ground Floor</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>9310383477</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Cafepiko1710@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday-Sat: 8AM - 10PM Daily</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>South Street Cafe</h3>
+                <p>Bringing the authentic coffee experience to your neighborhood since 2025.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <div class="visit-info">
+                    <p><strong>Address:</strong> Noida, Uttar Pradesh, India</p>
+                    <p><strong>Phone:</strong> 9310383477</p>
+                    <p><strong>Email:</strong> Cafepiko1710@gmail.com</p>
+                    <p><strong>Hours:</strong> Mon-Sat: 10AM - 10PM</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#menu" style="color: #ccc; text-decoration: none;">Menu</a></p>
+                <p><a href="#about" style="color: #ccc; text-decoration: none;">About Us</a></p>
+                <p><a href="#contact" style="color: #ccc; text-decoration: none;">Contact</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 South Street Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/Prev controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Main function  
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+}
+
+// ✅ Auto slide every 4 seconds (smooth speed)
+setInterval(() => {
+    plusSlides(1);
+}, 2000);
+</script>  
